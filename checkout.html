@@ -1,0 +1,476 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Jekyll v4.1.1" />
+    <title>Checkout Wellyfy</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.5/examples/checkout/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <meta name="theme-color" content="#563d7c" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link
+      href="https://getbootstrap.com/docs/4.5/examples/checkout/form-validation.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="text-center p-2">
+      <button
+        onclick="window.location='./index.html'"
+        class="btn btn-lg btn-danger btn-outline"
+      >
+        Abort Checkout
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img
+          class="d-block mx-auto mb-4"
+          src="./logo.PNG"
+          alt=""
+          width="72"
+          height="72"
+        />
+        <h2>Wellyfy Checkout</h2>
+        <p class="lead">Your Satisfaction is Our Pride</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Your cart</span>
+            <span class="badge badge-secondary badge-pill cart-total-items"
+              >3</span
+            >
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (INR)</span>
+              <strong class="cart-total-amount">$20</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Promo code"
+              />
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Billing address</h4>
+          <form
+            action="./index.html"
+            id="checkout-form"
+            class="needs-validation"
+            onsubmit="event.preventDefault()"
+            novalidate=""
+          >
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">First Name : </label>
+                <input
+                  name="firstName"
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder="e.g. John"
+                  minlength="4"
+                  required="true"
+                  value=""
+                />
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Last Name :</label>
+                <input
+                  name="lastName"
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="e.g. Smith"
+                  value=""
+                  required="true"
+                  minlength="4"
+                />
+                <div class="invalid-feedback">Valid last name is required.</div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email :<span class="text-muted"></span></label>
+              <input
+                name="email"
+                type="email"
+                class="form-control"
+                id="email"
+                required
+                placeholder="you@example.com"
+              />
+              <div class="invalid-feedback">
+                Email should be in the format: abc@domain.tld
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Address : </label>
+              <input
+                name="address"
+                type="text"
+                class="form-control"
+                id="address"
+                minlength="25"
+                placeholder="1234 Main St.mary Road ...."
+                required="true"
+              />
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2"
+                >Address 2 <span class="text-muted">(Optional)</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="address2"
+                placeholder="Apartment or suite"
+              />
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Country</label>
+                <select
+                  name="country"
+                  class="custom-select d-block w-100"
+                  id="country"
+                  required="true"
+                >
+                  <option value="">Choose...</option>
+                  <option>India</option>
+                  <option>United States</option>
+                  <option>Russia</option>
+                  <option>Dubai</option>
+                  <option>Afghanistan.</option>
+                  <option>Albania.</option>
+                  <option>Algeria.</option>
+                  <option>Andorra.</option>
+                  <option>Antigua and Barbuda.</option>
+                  <option>Argentina.</option>
+                  <option>Armenia.</option>
+                  <option>Botswana</option>
+                  <option>Brazil</option>
+                  <option>Brunei Darussalam</option>
+                  <option>Canada</option>
+                  <option>China</option>
+
+                  <option>Gambia</option>
+                  <option>Germany</option>
+
+                  <option>Iraq</option>
+                  <option>Ireland</option>
+                  <option>Italy</option>
+                  <option>Japan</option>
+                  <option>Zimbabwe</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">State</label>
+                <select
+                  name="state"
+                  class="custom-select d-block w-100"
+                  id="state"
+                  required=""
+                >
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">Zip</label>
+                <input
+                  name="zip"
+                  type="text"
+                  class="form-control"
+                  id="zip"
+                  minlength="6"
+                  maxlength="6"
+                  placeholder=""
+                  required=""
+                />
+                <div class="invalid-feedback">Zip code required.</div>
+              </div>
+            </div>
+            <hr class="mb-4" />
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="same-address"
+                required
+              />
+              <label class="custom-control-label" for="same-address"
+                >Shipping address is the same as my billing address</label
+              >
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="save-info"
+              />
+              <label class="custom-control-label" for="save-info"
+                >Save this information for next time</label
+              >
+            </div>
+            <hr class="mb-4" />
+
+            <h4 class="mb-3">Payment</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input
+                  id="credit"
+                  name="paymentMethod"
+                  type="radio"
+                  class="custom-control-input"
+                />
+                <label class="custom-control-label" for="credit"
+                  >Credit card</label
+                >
+              </div>
+              <div class="custom-control custom-radio">
+                <input
+                  id="debit"
+                  name="paymentMethod"
+                  type="radio"
+                  class="custom-control-input"
+                  required=""
+                  checked
+                />
+                <label class="custom-control-label" for="debit"
+                  >Debit card</label
+                >
+              </div>
+              <div class="custom-control custom-radio">
+                <input
+                  id="paypal"
+                  name="paymentMethod"
+                  type="radio"
+                  class="custom-control-input"
+                  required=""
+                />
+                <label class="custom-control-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="ccName">Name on card</label>
+                <input
+                  name="ccNname"
+                  type="text"
+                  class="form-control"
+                  id="cc-name"
+                  minlength="9"
+                  placeholder="e.g. JOHN DOE"
+                  required="true"
+                />
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback">Name on card is required</div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="creditcardNumber">Credit card number</label>
+                <input
+                  name="creditcardNumber"
+                  type="text"
+                  class="form-control"
+                  id="cc-number"
+                  placeholder="1234 5678 9101 123"
+                  minlength="16"
+                  maxlength="16"
+                  required="true"
+                />
+                <div class="invalid-feedback">Invalid Credit Card Number</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="ccExpiration">Expiration</label>
+                <input
+                  name="ccExpiration"
+                  type="text"
+                  class="form-control"
+                  id="cc-expiration"
+                  placeholder="e.g. 06/25"
+                  required="true"
+                  minlength="4"
+                  maxlength="5"
+                />
+                <div class="invalid-feedback">Expiration date required</div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="ccCvv">CVV</label>
+                <input
+                  name="ccCvv"
+                  type="text"
+                  class="form-control"
+                  id="cc-cvv"
+                  placeholder="e.g. 665"
+                  required="true"
+                  minlength="3"
+                />
+                <div class="invalid-feedback">Security code required</div>
+              </div>
+            </div>
+            <hr class="mb-4" />
+            <button
+              data-toggle="modal"
+              data-target="#checkout-modal"
+              class="btn btn-primary btn-lg btn-block checkout-submit"
+              type="submit"
+              onclick="window.location='./index.html'"
+            >
+              Place Order
+            </button>
+          </form>
+          <!-- <div id="checkout-modal" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Wellyfy</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="lead">
+                    <img
+                      src="https://img.icons8.com/emoji/48/000000/check-mark-emoji.png"
+                    />Order Placed Successfully
+                  </p>
+                  <p class="lead">Thankyou For Shopping</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script>
+      let totalItems = localStorage.getItem("cartNumbers");
+      if (totalItems) {
+        document.querySelector(".cart-total-items").textContent = totalItems;
+      } else {
+        document.querySelector(".cart-total-items").textContent = 0;
+      }
+
+      let cartTotalAmount = localStorage.getItem("totalCost");
+      if (cartTotalAmount) {
+        document.querySelector(
+          ".cart-total-amount"
+        ).textContent = cartTotalAmount;
+      } else {
+        document.querySelector(".cart-total-amount").textContent = 0;
+      }
+
+      let cartSubmit = document.querySelector(".checkout-submit");
+      cartSubmit.addEventListener("click", () => {
+        alert("Order Placed Successfully \n Thanks For Ordering");
+        localStorage.setItem("productsIncart", null);
+        localStorage.setItem("cartNumbers", 0);
+        localStorage.setItem("totalCost", 0);
+      });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>'
+        );
+    </script>
+    <script
+      src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://getbootstrap.com/docs/4.5/examples/checkout/form-validation.js"></script>
+
+    <!-- Validation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="./checkout.js"></script>
+  </body>
+</html>

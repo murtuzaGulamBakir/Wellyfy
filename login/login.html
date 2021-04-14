@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Sign Up Form Wellyfy</title>
+    <link rel="shortcut icon" href="images/heart.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="../index.html" class="sign-in-form" name="contact">
+            <h2 class="title">Login</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" required="true" />
+            </div>
+
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" required="true" />
+            </div>
+            <input type="submit" value="Login" class="btn solid loginbutton" />
+
+            <p class="social-text">Or Login with social platform</p>
+
+            <div class="social-media">
+              <a href="https://www.facebook.com/" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/?lang=en" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://mail.google.com/mail" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="https://in.linkedin.com/" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+
+          <form action="../index.html" class="sign-up-form" name="contact">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" required="true" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" required="true" />
+            </div>
+
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" required="true" />
+            </div>
+            <input
+              type="submit"
+              value="Sign up"
+              class="btn solid registerbutton"
+            />
+
+            <p class="social-text">Or Sign up with social platform</p>
+
+            <div class="social-media">
+              <a href="https://www.facebook.com/" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/?lang=en" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://mail.google.com/mail" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="https://in.linkedin.com/" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>SignUp Yourself For Better Experince.</p>
+            <button class="btn transparent" id="sign-up-btn">Sign up</button>
+          </div>
+          <img src="images/rocket.svg" class="image" />
+        </div>
+
+        <div class="panel right-panel">
+          <div class="content">
+            <h3></h3>
+            <p>Already Have An Account</p>
+            <button class="btn transparent" id="sign-in-btn">Log In</button>
+          </div>
+          <img src="images/desk.svg" class="image" />
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <title>Cart Wellyfy</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="../index.html">Wellyfy</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-center">
+          <form class="form-inline">
+            <!-- <div class="dropdown mx-1">
+              <button
+                style="border: none; background-color: transparent"
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Category
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#our-products">Mobile</a>
+                <a class="dropdown-item" href="#our-products">Laptop</a>
+                <a class="dropdown-item" href="#our-products"
+                  >Home Appliances</a
+                >
+                <a class="dropdown-item" href="#our-products">Grocery</a>
+              </div>
+            </div> -->
+            <input
+              class="form-control mr-sm-1"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              style="width: auto"
+            />
+            <button
+              class="btn btn-md btn-outline-success my-2 my-sm-0"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+          <li class="nav-item mx-2">
+            <a
+              style="font-size: 1.3rem"
+              class="nav-link text-white"
+              href="../index.html#our-products"
+            >
+              <button class="btn btn-light btn-md">
+                <img
+                  src="https://img.icons8.com/nolan/21/shopping-cart-loaded.png"
+                />
+                Shop Now
+              </button>
+            </a>
+          </li>
+          <!-- 
+          <li class="nav-item active mx-2">
+            <a class="nav-link" href="#">
+              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                height="30"
+                viewBox="0 0 172 172"
+                style="fill: #000000"
+              >
+                <g
+                  fill="none"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="none"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <path
+                    d="M0,172v-172h172v172z"
+                    fill="none"
+                    stroke="none"
+                    stroke-width="1"
+                  ></path>
+                  <g
+                    id="original-icon"
+                    fill="#3498db"
+                    stroke="none"
+                    stroke-width="1"
+                    opacity="0"
+                    visibility="hidden"
+                  >
+                    <path
+                      d="M30.96,13.76c-9.44436,0 -17.2,7.75564 -17.2,17.2v110.08c0,9.44437 7.75564,17.2 17.2,17.2h110.08c9.44437,0 17.2,-7.75563 17.2,-17.2v-110.08c0,-9.44436 -7.75563,-17.2 -17.2,-17.2zM30.96,20.64h110.08c5.69163,0 10.32,4.62836 10.32,10.32v110.08c0,4.65877 -3.12366,8.55737 -7.37047,9.83625c-1.0289,-5.50251 -3.50633,-9.91691 -6.78594,-13.24938c-3.99193,-4.05627 -8.96821,-6.62817 -13.81375,-8.72094c-4.84554,-2.09276 -9.62021,-3.72689 -13.2561,-5.53625c-3.52282,-1.7531 -5.5978,-3.56139 -6.49703,-5.64375c-0.21214,-3.5293 -0.24532,-6.43699 -0.24859,-9.57422c1.38069,-1.38506 2.42766,-2.99646 3.44672,-5.08609c1.20935,-2.47983 2.02438,-5.50151 2.53969,-8.53953c2.68577,-1.51976 4.87846,-4.35194 5.40187,-9.55406l0.00672,-0.01344v-0.02016c0.28002,-3.06159 -0.66563,-5.19047 -1.87453,-6.85984c1.46256,-4.65378 3.18978,-11.90925 2.57328,-19.50453c-0.34259,-4.22057 -1.42608,-8.49568 -4.03797,-12.04672c-2.33516,-3.17467 -6.12329,-5.36827 -10.78359,-6.35594c-1.35909,-1.84805 -3.16226,-3.31993 -5.35485,-4.18578c-2.79159,-1.1024 -6.04103,-1.58563 -9.61453,-1.58563h-0.04031h-0.04031c-13.66772,0.3279 -22.55828,6.00958 -26.3711,14.62672c-3.60458,8.1465 -2.84738,18.19051 -0.33594,28.56141c-1.34332,1.66744 -2.48515,3.93067 -1.935,7.21594c0.5509,5.24677 2.80751,7.97697 5.38844,9.43312c0.54516,2.97695 1.41058,5.95943 2.68078,8.45219c0.75229,1.47637 1.55928,2.80317 2.3986,3.93047c0.33457,0.44935 0.82718,0.74437 1.17578,1.13547c0.04266,3.48744 0.17926,6.23536 -0.23515,9.71531c-0.84287,2.15726 -2.88928,3.98757 -6.40969,5.78484c-3.6096,1.84281 -8.38401,3.50036 -13.24266,5.61016c-4.85864,2.10979 -9.85869,4.69013 -13.87422,8.74781c-3.30029,3.33494 -5.80355,7.75221 -6.83969,13.26281c-4.2468,-1.27888 -7.37047,-5.17748 -7.37047,-9.83625v-110.08c0,-5.69164 4.62836,-10.32 10.32,-10.32zM85.72453,41.28672c2.90301,0.00413 5.37031,0.43672 7.05469,1.10188c1.69245,0.66834 2.47817,1.46701 2.77485,2.1164l0.78609,1.73344l1.89469,0.2486c3.94586,0.51527 6.10375,1.99449 7.66609,4.1186c1.56234,2.1241 2.44534,5.12879 2.7211,8.52609c0.55151,6.79462 -1.42422,14.90405 -2.68078,18.51688l-0.87344,2.51953l2.21719,1.47812c-0.24269,-0.16151 0.8429,0.43757 0.645,2.66062v0.00672c-0.54166,5.09431 -2.70875,4.87781 -1.51844,4.87781h-3.11078l-0.31578,3.09063c-0.2537,2.52282 -1.21546,5.46479 -2.33813,7.76687c-1.12266,2.30208 -2.97049,4.05544 -2.43219,3.74906l-1.74015,0.98766v2.00219c0,4.00072 -0.00134,7.50635 0.31578,12.23484l0.04031,0.52406l0.18812,0.49047c1.78614,4.60096 5.78277,7.36943 10.05125,9.4936c4.26848,2.12417 9.08378,3.74369 13.59203,5.69078c4.50825,1.94709 8.65238,4.19677 11.63687,7.22937c2.30424,2.34138 4.00183,5.10894 4.81735,8.90906h-102.22578c0.82112,-3.79232 2.52867,-6.5557 4.85094,-8.90235c3.00928,-3.04087 7.18365,-5.30765 11.7175,-7.2764c4.53385,-1.96876 9.3666,-3.62048 13.63235,-5.79828c4.26575,-2.1778 8.24675,-5.0475 9.9236,-9.74219l0.12094,-0.34265l0.04703,-0.36281c0.66604,-4.96573 0.34265,-8.31097 0.34265,-12.45656v-2.00219l-1.74015,-0.98766c0.29212,0.16598 -0.2902,-0.245 -0.83313,-0.97422c-0.54292,-0.72922 -1.1867,-1.77107 -1.78719,-2.94953c-1.20098,-2.35692 -2.22291,-5.31185 -2.46578,-7.60562l-0.3225,-3.07719h-2.96297c-0.21535,-0.08936 -1.25905,-0.78088 -1.65281,-4.89125l-0.01344,-0.14781l-0.02687,-0.1411c-0.36062,-1.97136 0.63335,-2.33501 0.67859,-2.365l2.04922,-1.35719l-0.62484,-2.38515c-2.68034,-10.22769 -3.05406,-19.54564 -0.29563,-25.77985c2.75429,-6.22482 8.23607,-10.22967 20.19656,-10.52828z"
+                    ></path>
+                  </g>
+                  <g
+                    id="subtracted-icon"
+                    fill="#3498db"
+                    stroke="none"
+                    stroke-width="1"
+                  >
+                    <path
+                      d="M141.04,13.76c9.44437,0 17.2,7.75564 17.2,17.2v80.74666c-1.84497,-0.2549 -3.72784,-0.38666 -5.64,-0.38666c-0.41474,0 -0.8281,0.0062 -1.24,0.01851v-80.37851c0,-5.69164 -4.62837,-10.32 -10.32,-10.32h-110.08c-5.69164,0 -10.32,4.62836 -10.32,10.32v110.08c0,4.65877 3.12367,8.55737 7.37047,9.83625c1.03614,-5.51061 3.5394,-9.92788 6.83969,-13.26281c4.01553,-4.05768 9.01558,-6.63802 13.87422,-8.74781c4.85865,-2.1098 9.63306,-3.76735 13.24266,-5.61016c3.52041,-1.79728 5.56682,-3.62758 6.40969,-5.78484c0.41442,-3.47995 0.27781,-6.22787 0.23515,-9.71531c-0.3486,-0.3911 -0.8412,-0.68611 -1.17578,-1.13547c-0.83931,-1.12731 -1.6463,-2.45411 -2.3986,-3.93047c-1.27021,-2.49276 -2.13562,-5.47523 -2.68078,-8.45219c-2.58092,-1.45616 -4.83754,-4.18636 -5.38844,-9.43312c-0.55015,-3.28527 0.59168,-5.54849 1.935,-7.21594c-2.51144,-10.37089 -3.26864,-20.4149 0.33594,-28.56141c3.81282,-8.61713 12.70338,-14.29882 26.3711,-14.62672h0.08062c3.57351,0 6.82294,0.48323 9.61453,1.58563c2.19259,0.86584 3.99575,2.33772 5.35485,4.18578c4.6603,0.98767 8.44843,3.18127 10.78359,6.35594c2.61189,3.55104 3.69538,7.82614 4.03797,12.04672c0.61651,7.59529 -1.11072,14.85075 -2.57328,19.50453c1.2089,1.66937 2.15455,3.79825 1.87453,6.85984v0.02016l-0.00672,0.01344c-0.52341,5.20212 -2.7161,8.03431 -5.40187,9.55406c-0.5153,3.03802 -1.33034,6.0597 -2.53969,8.53953c-1.01906,2.08963 -2.06603,3.70103 -3.44672,5.08609c0.00327,3.13723 0.03645,6.04492 0.24859,9.57422c0.89923,2.08236 2.97421,3.89065 6.49703,5.64375c2.75932,1.37315 6.17451,2.64537 9.7788,4.09372c-1.42759,1.84962 -2.70237,3.82245 -3.80497,5.89911c-3.08684,-1.21746 -6.18437,-2.41186 -9.03758,-3.83173c-4.26848,-2.12417 -8.26511,-4.89263 -10.05125,-9.4936l-0.18812,-0.49047l-0.04031,-0.52406c-0.31712,-4.72849 -0.31578,-8.23412 -0.31578,-12.23484v-2.00219l1.7382,-0.98655c-0.53186,0.30101 1.31284,-1.45088 2.43414,-3.75017c1.12266,-2.30208 2.08443,-5.24405 2.33813,-7.76687l0.31578,-3.09063l2.82216,0c-0.41483,-0.02245 1.32905,-0.38212 1.80706,-4.87781v-0.00672c0.16988,-1.90834 -0.60605,-2.61996 -0.67562,-2.68104l-2.18657,-1.45771l0.87344,-2.51953c1.25657,-3.61282 3.2323,-11.72226 2.68078,-18.51688c-0.27576,-3.39731 -1.15876,-6.40199 -2.7211,-8.52609c-1.56234,-2.1241 -3.72024,-3.60332 -7.66609,-4.1186l-1.89469,-0.2486l-0.78609,-1.73344c-0.29668,-0.64939 -1.0824,-1.44806 -2.77485,-2.1164c-1.68438,-0.66516 -4.15168,-1.09775 -7.05469,-1.10188c-11.96049,0.29862 -17.44227,4.30346 -20.19656,10.52828c-2.75844,6.23421 -2.38471,15.55216 0.29563,25.77985l0.62484,2.38515l-2.04922,1.35719c-0.04524,0.02999 -1.03921,0.39364 -0.67859,2.365l0.02687,0.1411l0.01344,0.14781c0.39376,4.11037 1.43746,4.80189 1.65281,4.89125h2.96297l0.3225,3.07719c0.24287,2.29378 1.2648,5.24871 2.46578,7.60562c0.60049,1.17846 1.24426,2.22031 1.78719,2.94953c0.54173,0.72761 1.12267,1.13838 0.83505,0.97531l1.73823,0.98656v2.00219c0,4.1456 0.32339,7.49083 -0.34265,12.45656l-0.04703,0.36281l-0.12094,0.34265c-1.67684,4.69469 -5.65785,7.56439 -9.9236,9.74219c-4.26575,2.1778 -9.09849,3.82952 -13.63235,5.79828c-4.53385,1.96876 -8.70822,4.23554 -11.7175,7.2764c-2.32226,2.34665 -4.02982,5.11003 -4.85094,8.90235l76.44804,0c-0.01231,0.4119 -0.01851,0.82526 -0.01851,1.24c0,1.91216 0.13176,3.79503 0.38666,5.64h-80.74666c-9.44436,0 -17.2,-7.75563 -17.2,-17.2v-110.08c0,-9.44436 7.75564,-17.2 17.2,-17.2z"
+                    ></path>
+                  </g>
+                  <g stroke="none" stroke-width="1">
+                    <g fill="#e76060">
+                      <g
+                        id="Слой_2"
+                        font-family="Inter, sans-serif"
+                        font-weight="400"
+                        font-size="16"
+                        text-anchor="start"
+                        visibility="hidden"
+                      ></g>
+                      <g
+                        id="Android_x5F_4"
+                        font-family="Inter, sans-serif"
+                        font-weight="400"
+                        font-size="16"
+                        text-anchor="start"
+                        visibility="hidden"
+                      ></g>
+                      <g
+                        id="Android_x5F_5"
+                        font-family="Inter, sans-serif"
+                        font-weight="400"
+                        font-size="16"
+                        text-anchor="start"
+                        visibility="hidden"
+                      ></g>
+                      <g
+                        id="Windows_x5F_8"
+                        font-family="Inter, sans-serif"
+                        font-weight="400"
+                        font-size="16"
+                        text-anchor="start"
+                        visibility="hidden"
+                      ></g>
+                      <g
+                        id="Windows_x5F_10"
+                        font-family="Inter, sans-serif"
+                        font-weight="400"
+                        font-size="16"
+                        text-anchor="start"
+                        visibility="hidden"
+                      ></g>
+                      <g
+                        id="Color"
+                        font-family="Inter, sans-serif"
+                        font-weight="400"
+                        font-size="16"
+                        text-anchor="start"
+                        visibility="hidden"
+                      ></g>
+                      <g
+                        id="IOS"
+                        font-family="Inter, sans-serif"
+                        font-weight="400"
+                        font-size="16"
+                        text-anchor="start"
+                        visibility="hidden"
+                      ></g>
+                      <g id="IOS_copy">
+                        <path
+                          d="M172.896,152.6c0,2.064 -1.376,3.44 -3.44,3.44h-13.416v13.416c0,2.064 -1.376,3.44 -3.44,3.44c-2.064,0 -3.44,-1.376 -3.44,-3.44v-13.416h-13.416c-2.064,0 -3.44,-1.376 -3.44,-3.44c0,-2.064 1.376,-3.44 3.44,-3.44h13.416v-13.416c0,-2.064 1.376,-3.44 3.44,-3.44c2.064,0 3.44,1.376 3.44,3.44v13.416h13.416c2.064,0 3.44,1.376 3.44,3.44zM187,152.6c0,18.92 -15.48,34.4 -34.4,34.4c-18.92,0 -34.4,-15.48 -34.4,-34.4c0,-18.92 15.48,-34.4 34.4,-34.4c18.92,0 34.4,15.48 34.4,34.4zM180.12,152.6c0,-15.136 -12.384,-27.52 -27.52,-27.52c-15.136,0 -27.52,12.384 -27.52,27.52c0,15.136 12.384,27.52 27.52,27.52c15.136,0 27.52,-12.384 27.52,-27.52z"
+                        ></path>
+                      </g>
+                    </g>
+                    <g fill="#000000" opacity="0">
+                      <g
+                        id="IOS"
+                        font-family="Inter, sans-serif"
+                        font-weight="400"
+                        font-size="16"
+                        text-anchor="start"
+                        visibility="hidden"
+                      ></g>
+                      <g id="IOS_copy">
+                        <path
+                          d="M152.6,111.32c-22.704,0 -41.28,18.576 -41.28,41.28c0,22.704 18.576,41.28 41.28,41.28c22.704,0 41.28,-18.576 41.28,-41.28c0,-22.704 -18.576,-41.28 -41.28,-41.28z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                  <g fill="#e76060" stroke="none" stroke-width="1">
+                    <path
+                      d="M66.45,144.22v-10.39c0.38,-0.09333 0.79,-0.15333 1.23,-0.18c0.44667,-0.03333 0.88333,-0.05 1.31,-0.05v0c0.46,0 0.92667,0.04667 1.4,0.14c0.47333,0.08667 0.90667,0.25 1.3,0.49c0.38667,0.24 0.70333,0.57 0.95,0.99c0.24667,0.42 0.37,0.95667 0.37,1.61v0c0,0.64 -0.11667,1.18 -0.35,1.62c-0.22667,0.43333 -0.53,0.79 -0.91,1.07c-0.38,0.27333 -0.81667,0.47 -1.31,0.59c-0.48667,0.12 -0.99,0.18 -1.51,0.18v0c-0.05333,0 -0.13667,0 -0.25,0c-0.11333,0 -0.23333,-0.00333 -0.36,-0.01c-0.12,-0.00667 -0.24333,-0.01333 -0.37,-0.02c-0.12,-0.00667 -0.20333,-0.01667 -0.25,-0.03v0v3.99zM69.02,134.68v0c-0.26,0 -0.51,0.00333 -0.75,0.01c-0.24,0.01333 -0.43,0.04 -0.57,0.08v0v4.35c0.04667,0.02 0.12667,0.03333 0.24,0.04c0.10667,0.00667 0.22,0.01 0.34,0.01c0.12,0.00667 0.23667,0.01 0.35,0.01c0.10667,0 0.18667,0 0.24,0v0c0.34,0 0.67667,-0.03333 1.01,-0.1c0.34,-0.06 0.64333,-0.17667 0.91,-0.35c0.26667,-0.17333 0.48333,-0.41333 0.65,-0.72c0.16667,-0.31333 0.25,-0.70667 0.25,-1.18v0c0,-0.41333 -0.07667,-0.75667 -0.23,-1.03c-0.16,-0.27333 -0.36667,-0.49333 -0.62,-0.66c-0.25333,-0.16667 -0.54,-0.28667 -0.86,-0.36c-0.32,-0.06667 -0.64,-0.1 -0.96,-0.1zM77.99,136.72l-0.26,1.16c-0.29333,-0.10667 -0.57667,-0.16 -0.85,-0.16v0c-0.43333,0 -0.77333,0.12 -1.02,0.36c-0.25333,0.23333 -0.41,0.53 -0.47,0.89v0v5.25h-1.2v-7.5h0.84l0.23,0.91h0.06c0.18667,-0.33333 0.41333,-0.59333 0.68,-0.78c0.26667,-0.18667 0.60333,-0.28 1.01,-0.28v0c0.29333,0 0.62,0.05 0.98,0.15zM78.87,140.47v0c0,-1.26667 0.28333,-2.24 0.85,-2.92c0.56667,-0.67333 1.38,-1.01 2.44,-1.01v0c0.56,0 1.04667,0.09333 1.46,0.28c0.41333,0.18667 0.75667,0.45 1.03,0.79c0.27333,0.34667 0.47333,0.76333 0.6,1.25c0.13333,0.48667 0.2,1.02333 0.2,1.61v0c0,1.26667 -0.28333,2.24 -0.85,2.92c-0.56667,0.67333 -1.38,1.01 -2.44,1.01v0c-0.56,0 -1.04667,-0.09333 -1.46,-0.28c-0.42,-0.18 -0.76333,-0.44333 -1.03,-0.79c-0.27333,-0.34667 -0.47333,-0.76333 -0.6,-1.25c-0.13333,-0.48667 -0.2,-1.02333 -0.2,-1.61zM80.12,140.47v0c0,0.38 0.03667,0.74667 0.11,1.1c0.07333,0.34667 0.19,0.65 0.35,0.91c0.16,0.26 0.37333,0.47 0.64,0.63c0.25333,0.16 0.56667,0.24 0.94,0.24v0c1.36,0.00667 2.04,-0.95333 2.04,-2.88v0c0,-0.39333 -0.03667,-0.76333 -0.11,-1.11c-0.08,-0.34667 -0.2,-0.65 -0.36,-0.91c-0.16,-0.26 -0.37,-0.47 -0.63,-0.63c-0.25333,-0.15333 -0.56667,-0.23 -0.94,-0.23v0c-1.36,-0.00667 -2.04,0.95333 -2.04,2.88zM88.88,136.72h4.23v7.5h-1.2v-6.45h-3.03v6.45h-1.2v-6.45h-1.17v-1.05h1.17v-0.42c0,-0.94 0.23333,-1.62333 0.7,-2.05c0.46,-0.42667 1.14333,-0.64 2.05,-0.64v0c0.58667,0 1.11,0.06 1.57,0.18c0.46,0.11333 0.82,0.25 1.08,0.41v0l-0.4,0.96c-0.27333,-0.16667 -0.59333,-0.29333 -0.96,-0.38c-0.37333,-0.07333 -0.77,-0.11 -1.19,-0.11v0c-0.36667,0 -0.66,0.04 -0.88,0.12c-0.21333,0.08667 -0.37667,0.21667 -0.49,0.39c-0.12,0.17333 -0.19667,0.39333 -0.23,0.66c-0.03333,0.25333 -0.05,0.54667 -0.05,0.88zM96.77,133.72v8.65c0,0.35333 0.06,0.60333 0.18,0.75c0.12,0.15333 0.29,0.23 0.51,0.23v0c0.13333,0 0.27333,-0.01 0.42,-0.03c0.15333,-0.02 0.32333,-0.06667 0.51,-0.14v0l0.13,0.95c-0.15333,0.08 -0.37333,0.14667 -0.66,0.2c-0.28667,0.04667 -0.53333,0.07 -0.74,0.07v0c-0.45333,0 -0.82333,-0.12667 -1.11,-0.38c-0.29333,-0.26 -0.44,-0.69333 -0.44,-1.3v0v-9zM104.84,142.75l0.45,0.87c-0.3,0.24 -0.67667,0.43 -1.13,0.57c-0.45333,0.14 -0.93667,0.21 -1.45,0.21v0c-0.56667,0 -1.06,-0.09333 -1.48,-0.28c-0.42,-0.18 -0.76667,-0.44333 -1.04,-0.79c-0.26667,-0.34667 -0.46667,-0.76 -0.6,-1.24c-0.12667,-0.48 -0.19,-1.02 -0.19,-1.62v0c0,-1.28 0.28333,-2.25667 0.85,-2.93c0.57333,-0.66667 1.39,-1 2.45,-1v0c0.34,0 0.68,0.03667 1.02,0.11c0.34,0.07333 0.64333,0.21667 0.91,0.43c0.27333,0.21333 0.49333,0.51 0.66,0.89c0.17333,0.38667 0.26,0.89667 0.26,1.53v0c0,0.32667 -0.03,0.69 -0.09,1.09v0h-4.82c0,0.44 0.04667,0.83 0.14,1.17c0.08667,0.34 0.22667,0.62667 0.42,0.86c0.18667,0.24 0.43333,0.42 0.74,0.54c0.30667,0.12667 0.68,0.19 1.12,0.19v0c0.34,0 0.68,-0.06 1.02,-0.18c0.34,-0.12 0.59333,-0.26 0.76,-0.42zM102.71,137.59v0c-0.58667,0 -1.06,0.15667 -1.42,0.47c-0.35333,0.30667 -0.56333,0.83667 -0.63,1.59v0h3.72c0,-0.76 -0.14667,-1.29333 -0.44,-1.6c-0.28667,-0.30667 -0.69667,-0.46 -1.23,-0.46z"
+                    ></path>
+                  </g>
+                  <path
+                    d="M56.45,154.4v-30.8h59.1v30.8z"
+                    fill="#ff0000"
+                    stroke="#50e3c2"
+                    stroke-width="3"
+                    opacity="0"
+                  ></path>
+                </g></svg
+              ><span class="sr-only">(current)</span></a
+            >
+          </li> -->
+          <!-- Profile Icon Ends -->
+          <li class="nav-item mx-2">
+            <a
+              style="font-size: 1rem"
+              class="nav-link text-white"
+              href="../index.html#why-wellyfy"
+            >
+              <button class="btn btn-light">Why Wellyfy?</button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <a href="../index.html">
+      <button class="btn btn-success m-3 text-center">Home</button></a
+    >
+
+    <div class="amountCotainer"></div>
+    <table class="table tableContainer">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+    </table>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+      let cartItems = localStorage.getItem("productsIncart");
+
+      cartItems = JSON.parse(cartItems);
+      let cartNumbers = localStorage.getItem("cartNumbers");
+      let cartCost = localStorage.getItem("totalCost");
+      let amountContainer = document.querySelector(".amountCotainer");
+      let productContainer = document.querySelector(".tableContainer");
+      amountContainer.innerHTML = `<div class="card m-5" style="width: 18rem">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Total Items : <b>${cartNumbers} </b></li>
+          <li class="list-group-item">Total Amount : <b>₹${cartCost}</b></li>
+        </ul>
+        <a href="../checkout.html"  ><button  class="btn btn-success btn-lg text-center">Checkout</button></a>
+        
+      </div>
+      `;
+      productContainer.innerHTML = `
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+                <th scope="col">Remove</th>
+              </tr>
+            </thead>
+
+          </table>`;
+
+      Object.values(cartItems).map((item) => {
+        productContainer.innerHTML += `
+          <table class="table tablebootstrap">
+
+            <tbody>
+              <tr>
+                <td>${item.id}</td>
+                <td>${item.name}</td>
+                <td>${item.price}</td>
+                <td>${item.inCart}</td>
+                <td>${item.price.replace("\u20b9", "") * item.inCart}</td>
+                <td><button class="btn btn-danger btn-md removebutton">Clear Cart</button></td>
+              </tr>
+            </tbody>
+          </table>
+          `;
+      });
+
+      let removebutton = document.querySelectorAll(".removebutton");
+
+      for (let i = 0; i < removebutton.length; i++) {
+        removebutton[i].addEventListener("click", () => {
+          handleRemove(i);
+        });
+      }
+
+      function handleRemove(i) {
+        localStorage.setItem("productsIncart", null);
+        localStorage.setItem("cartNumbers", 0);
+        localStorage.setItem("totalCost", 0);
+        window.location.reload();
+        return;
+      }
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .col-sm {
+        display: flex;
+        justify-content: space-between;
+      }
+      .productflex {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html">Index</a>
+    <div class="containercart">
+      <span class="productscount"
+        >Products Count:
+        <h5>0</h5>
+      </span>
+
+      <div class="col-sm">
+        <h5>Name</h5>
+        <h5>Price</h5>
+        <h5>Quantity</h5>
+      </div>
+      <div class="product"></div>
+    </div>
+    <script src="../index.js"></script>
+  </body>
+</html> -->
