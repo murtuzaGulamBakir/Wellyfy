@@ -1,3 +1,5 @@
+// checkout
+
 $(document).ready(function () {
   $("#checkout-form").validate({
     rules: {
